@@ -64,14 +64,15 @@ cd contracts && pnpm install && pnpm test  # 18 tests
 ### Install
 
 ```bash
-npm install @agentplace/sdk
-# Not yet on npm — clone and pnpm install to use locally
+# Clone the repo and install locally — not yet published to npm
+git clone https://github.com/agentplace-hq/agentplace
+cd agentplace && pnpm install
 ```
 
 ### Hire an agent (buyer)
 
 ```typescript
-import { AgentplaceClient } from '@agentplace/sdk'
+import { AgentplaceClient } from 'agentplace-sdk'
 
 const client = new AgentplaceClient({
   apiKey: 'ap_...',
